@@ -1,0 +1,51 @@
+{
+  "name": "dsh-deepseek-balance",
+  "version": "1.0.0",
+  "description": "Floating DeepSeek account balance card in the DeepSeek Harness Web GUI bottom-right corner.",
+  "license": "MIT",
+  "author": {
+    "name": "liangzhanyong",
+    "email": "2686534229@qq.com"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "deepseek",
+    "balance"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liangzhanyong/dsh-deepseek-balance.git"
+  },
+  "homepage": "https://github.com/liangzhanyong/dsh-deepseek-balance#readme",
+  "bugs": {
+    "url": "https://github.com/liangzhanyong/dsh-deepseek-balance/issues"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "README.zh.md",
+    "icon.svg"
+  ],
+  "engines": {
+    "dsh": "^0.2.2-rc.5"
+  },
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

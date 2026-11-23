@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "DeepSeek balance",
+    "description": "Shows the signed-in DeepSeek platform account's topped-up balance in a floating card at the bottom-right corner of the Web GUI, with the granted balance and last refresh time, refreshed every 60 seconds."
+  }
+}
